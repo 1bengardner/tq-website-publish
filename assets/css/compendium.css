@@ -54,10 +54,17 @@
   background: linear-gradient(#b5e080, #a7d3e8, #e6ba90);
 }
 
-.earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental {
+.physical {
+  background: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0));
+}
+
+.earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
   padding: 0 0.3em;
   border-radius: 0.3em;
   white-space: nowrap;
+}
+.earth.record-name, .water.record-name, .fire.record-name, .poison.record-name, .ice.record-name, .lightning.record-name, .frostfire.record-name, .elemental.record-name, .physical.record-name {
+  border-radius: 0.8em 0.3em;
 }
 
 /*# sourceMappingURL=compendium.css.map */
