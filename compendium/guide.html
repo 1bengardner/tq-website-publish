@@ -56,10 +56,10 @@
       <a href="#stats">Stats</a>
     </li>
     <li>
-      <a href="#skills">Skills</a>
+      <a href="#items">Items</a>
     </li>
     <li>
-      <a href="#items">Items</a>
+      <a href="#skills">Skills</a>
     </li>
     <li>
       <a href="#elements">Elements</a>
@@ -387,11 +387,11 @@
   <tbody>
     <tr>
       <td>Accuracy</td>
-      <td>Determines chance to hit.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Accuracy = <code class="language-plaintext highlighter-rouge">weapon's accuracy</code> + <code class="language-plaintext highlighter-rouge">dexterity</code> - 10</details></td>
+      <td>Determines chance to hit.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Accuracy = <code class="language-plaintext highlighter-rouge">weapon's accuracy</code> + <code class="language-plaintext highlighter-rouge">dexterity</code> - 10</details></td>
     </tr>
     <tr>
       <td>Base Damage</td>
-      <td>Determines how much damage will be done with a <a href="#attacking">regular attack</a>.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Base damage = <a href="#power"><code class="language-plaintext highlighter-rouge">power</code></a> × <a href="#primary-stats"><code class="language-plaintext highlighter-rouge">primary stat</code></a> / 10</details></td>
+      <td>Determines how much damage will be done with a <a href="#attacking">regular attack</a>.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Base damage = <a href="#power"><code class="language-plaintext highlighter-rouge">power</code></a> × <a href="#primary-stats"><code class="language-plaintext highlighter-rouge">primary stat</code></a> / 10</details></td>
     </tr>
     <tr>
       <td>Average Damage</td>
@@ -399,47 +399,26 @@
     </tr>
     <tr>
       <td>Critical Chance</td>
-      <td>Determines chance to land a critical hit.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Critical chance = <code class="language-plaintext highlighter-rouge">weapon's critical chance</code> × (1 + (<code class="language-plaintext highlighter-rouge">dexterity</code> - 10) / 100)</details></td>
+      <td>Determines chance to land a critical hit.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Critical chance = <code class="language-plaintext highlighter-rouge">weapon's critical chance</code> × (1 + (<code class="language-plaintext highlighter-rouge">dexterity</code> - 10) / 100)</details></td>
     </tr>
     <tr>
       <td>Critical Damage</td>
-      <td>Determines critical hit damage compared to a regular attack.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Critical damage = <code class="language-plaintext highlighter-rouge">weapon's critical damage</code> × (1 + (<code class="language-plaintext highlighter-rouge">strength</code> - 10) / 100)</details></td>
+      <td>Determines critical hit damage compared to a regular attack.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Critical damage = <code class="language-plaintext highlighter-rouge">weapon's critical damage</code> × (1 + (<code class="language-plaintext highlighter-rouge">strength</code> - 10) / 100)</details></td>
     </tr>
     <tr>
       <td>Defence</td>
-      <td>Decreases damage taken by a <em>flat value</em>. Calculated before reductions.<details><summary class="bar-descriptor"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details></td>
+      <td>Decreases damage taken by a <em>flat value</em>. Calculated before reductions.<details><summary class="small-text"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details></td>
     </tr>
     <tr>
       <td>Reduction</td>
-      <td>Decreases damage taken by a <em>percentage</em>. Calculated after defence.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Reduction = <code class="language-plaintext highlighter-rouge">equipment's reduction</code> + 3 × √(<code class="language-plaintext highlighter-rouge">wisdom</code> - 10)</details></td>
+      <td>Decreases damage taken by a <em>percentage</em>. Calculated after defence.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Reduction = <code class="language-plaintext highlighter-rouge">equipment's reduction</code> + 3 × √(<code class="language-plaintext highlighter-rouge">wisdom</code> - 10)</details></td>
     </tr>
     <tr>
       <td>Block Chance</td>
-      <td>Determines chance to nullify an enemy attack against you.<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>Block chance = <code class="language-plaintext highlighter-rouge">shield's block chance</code> × (1 + (<code class="language-plaintext highlighter-rouge">dexterity</code> - 10) / 20)</details></td>
+      <td>Determines chance to nullify an enemy attack against you.<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>Block chance = <code class="language-plaintext highlighter-rouge">shield's block chance</code> × (1 + (<code class="language-plaintext highlighter-rouge">dexterity</code> - 10) / 20)</details></td>
     </tr>
   </tbody>
 </table>
-
-<hr />
-
-<h2 id="skills">Skills</h2>
-
-<p>Most <span class="compendium-link"><a href="skills">skills</a></span> require a certain weapon type to be equipped in order to use them in <a href="#battle">battle</a>. Skills consume EP when used.</p>
-
-<p>There are <span class="compendium-link"><a href="skills#avalanche">three</a></span> <span class="compendium-link"><a href="skills#melting-touch">special</a></span> <span class="compendium-link"><a href="skills#hailstorm">skills</a></span> that may be used outside of battle in very specific scenarios.</p>
-
-<p>You may keep up to <em>4</em> skills. To get another skill after four, you must relinquish one that you already have.</p>
-
-<h3 id="stat-altering-skills">Stat-Altering Skills</h3>
-
-<p>Some skills alter user stats and/or opponent stats.</p>
-
-<p>Stats will return to their original values after</p>
-
-<ul>
-  <li>Battle, or</li>
-  <li>Changing equipment in battle.</li>
-</ul>
 
 <hr />
 
@@ -590,6 +569,27 @@
 <h4 id="passive-bonuses">Passive Bonuses</h4>
 
 <p>Some miscellaneous items present passive bonuses that benefit you as long as that item is in your inventory. They do not need to be equipped.</p>
+
+<hr />
+
+<h2 id="skills">Skills</h2>
+
+<p>Most <span class="compendium-link"><a href="skills">skills</a></span> require a certain weapon type to be equipped in order to use them in <a href="#battle">battle</a>. Skills consume EP when used.</p>
+
+<p>There are <span class="compendium-link"><a href="skills#avalanche">three</a></span> <span class="compendium-link"><a href="skills#melting-touch">special</a></span> <span class="compendium-link"><a href="skills#hailstorm">skills</a></span> that may be used outside of battle in very specific scenarios.</p>
+
+<p>You may keep up to <em>4</em> skills. To get another skill after four, you must relinquish one that you already have.</p>
+
+<h3 id="stat-altering-skills">Stat-Altering Skills</h3>
+
+<p>Some skills alter user stats and/or opponent stats.</p>
+
+<p>Stats will return to their original values after</p>
+
+<ul>
+  <li>Battle, or</li>
+  <li>Changing equipment in battle.</li>
+</ul>
 
 <hr />
 
@@ -770,7 +770,7 @@
 
 <p>Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.</p>
 
-<p>Elementally-imbued weapons generally do not inflict ailments. However, <em>lightning weapons</em> are special: While wielding one, non-elemental attacks have a chance of inflicting paralysis.</p>
+<p>Elementally-imbued weapons generally do not inflict ailments. However, <em>lightning weapons</em> are special: while wielding one, non-elemental attacks have a chance of inflicting paralysis.</p>
 
 <table>
   <thead>
@@ -848,7 +848,7 @@
   <li><span id="attacking"><strong>Attacking</strong> <img src="/assets/img/icons/attack.gif" alt="Sword" /></span> strikes the enemy with your equipped weapon. Also referred to as a <em>regular attack</em>.</li>
   <li><strong>Defending</strong> <img src="/assets/img/icons/defend.gif" alt="Shield" /> increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
     <details style="margin-bottom: 0.5em;">
-      <summary class="bar-descriptor"><em>How much EP?</em></summary>
+      <summary class="small-text"><em>How much EP?</em></summary>
 
       <ul>
         <li>EP restored = 5 + ∜<code class="language-plaintext highlighter-rouge">wisdom</code><sup>3</sup></li>
@@ -859,7 +859,7 @@
   </li>
   <li><strong>Running away</strong> <img src="/assets/img/icons/flee.gif" alt="Running Man" /> attempts to flee from battle. If your level is not higher than the enemy’s, there is a chance that the enemy will catch up.
     <details>
-      <summary class="bar-descriptor"><em>What's the chance to flee?</em></summary>
+      <summary class="small-text"><em>What's the chance to flee?</em></summary>
 
       <ul>
         <li>Chance to flee = 100% / (2 + <code class="language-plaintext highlighter-rouge">enemy level</code> - <code class="language-plaintext highlighter-rouge">your level</code>)</li>
@@ -918,7 +918,7 @@
   <li><strong>Changing equipment</strong> <img src="/assets/img/icons/inventory.gif" alt="Body Armour" /> allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.</li>
   <li><strong>Drinking a potion</strong> <img src="/assets/img/icons/potion.gif" alt="Potion" /> restores HP. It requires you to have at least one vial of life fluid.
     <details>
-      <summary class="bar-descriptor"><em>How much HP?</em></summary>
+      <summary class="small-text"><em>How much HP?</em></summary>
 
       <ul>
         <li>HP restored = 50 + 10 × √<code class="language-plaintext highlighter-rouge">your level</code> - 10</li>
