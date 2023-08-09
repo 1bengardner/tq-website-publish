@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.site-nav {
+  z-index: 1;
+}
+
 .site-header.decorative-background {
   background: url("/assets/img/background-light.jpg");
   background-repeat: no-repeat;
@@ -43,6 +47,16 @@
 
 .emoji {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
+  }
+}
+:target {
+  animation: slide-in 0.5s;
 }
 
 @keyframes expand {
