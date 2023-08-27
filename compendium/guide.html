@@ -455,7 +455,7 @@
 
 <ul>
   <li>An enemy’s physical reduction is not applied.</li>
-  <li>Only ⅓ of an enemy’s defence is applied.</li>
+  <li>Only ½ of an enemy’s defence is applied.</li>
   <li>The average of an enemy’s 3 elemental reductions is applied.
     <ul>
       <li>If an enemy is immune to an element, that component is treated as 100% reduction in this average.</li>
@@ -579,6 +579,18 @@
 <p>There are <span class="compendium-link"><a href="skills#avalanche">three</a></span> <span class="compendium-link"><a href="skills#melting-touch">special</a></span> <span class="compendium-link"><a href="skills#hailstorm">skills</a></span> that may be used outside of battle in very specific scenarios.</p>
 
 <p>You may keep up to <em>4</em> skills. To get another skill after four, you must relinquish one that you already have.</p>
+
+<h3 id="elemental-skills">Elemental Skills</h3>
+
+<p><em>Elemental skills</em> are skills which deal elemental damage.</p>
+
+<p>They have the following properties when used:</p>
+
+<ul>
+  <li>Defence applied is reduced by ½.</li>
+  <li><a href="#elemental-reductions">Elemental reductions</a> are applied.</li>
+  <li>There is a chance to inflict an <a href="#elemental-ailments">elemental ailment</a>.</li>
+</ul>
 
 <h3 id="stat-altering-skills">Stat-Altering Skills</h3>
 
@@ -768,7 +780,7 @@
 
 <h3 id="elemental-ailments">Elemental Ailments</h3>
 
-<p>Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.</p>
+<p><a href="#elemental-skills">Elemental skills</a> have a chance to inflict an ailment upon the target. Ailments are removed after battle.</p>
 
 <p>Elementally-imbued weapons generally do not inflict ailments. However, <em>lightning weapons</em> are special: while wielding one, non-elemental attacks have a chance of inflicting paralysis.</p>
 
@@ -794,7 +806,7 @@
     <tr>
       <td>Poison</td>
       <td>100% chance to be <em>poisoned</em></td>
-      <td>Take damage equal to approximately 2% of your max HP each turn.</td>
+      <td>Take damage equal to approximately 2% of your max HP each turn.<details markdown=1><summary class="small-text"><em>Special case for rare enemies</em></summary><p><span id="poison-on-rare-enemies">Poisoned <a href="#rare-enemies"><em>rare enemies</em></a> have a 20% chance to be cured each turn and cannot take poison damage if their HP is below 10% of their max HP</span></p></details></td>
     </tr>
     <tr>
       <td>Water</td>
@@ -809,7 +821,7 @@
     <tr>
       <td>Fire</td>
       <td>25% chance to <em>ignite</em></td>
-      <td>Take damage equal to approximately 25% of damage dealt by the original igniting attack each turn until recovery. 25% chance of recovery each turn.</td>
+      <td>Take damage equal to approximately 25% of damage dealt by the last igniting attack each turn until recovery. 25% chance of recovery each turn.<details markdown=1><summary class="small-text"><em>Ignition, Transmission, Backfire, Afterburn</em></summary><p>If you ignite the enemy while you are on fire, your attack is considered the last igniting attack and you will take 25% of its damage instead of the attack that ignited you. The inverse also applies.</p></details></td>
     </tr>
     <tr>
       <td>Petrification</td>
@@ -929,6 +941,14 @@
 </ul>
 
 <p>In addition to the five moves mentioned, you may use any of your <a href="#skills">skills</a> for which you meet the requirements.</p>
+
+<h3 id="enemy-peculiarities">Enemy Peculiarities</h3>
+
+<ul>
+  <li>Certain enemies cannot be fled from. If you attempt to flee from an unfleeable enemy, you will see text “<span class="game-text">There’s nowhere to run.</span>”</li>
+  <li>Enemies that are “living” can be poisoned. These are enemies that bear blood and drop potions. Bloodless enemies are immune to poison.</li>
+  <li><span id="rare-enemies">An enemy with a border that is not brown is considered “rare.” <a href="#poison-on-rare-enemies">Poison has a weaker effect on rare enemies.</a></span></li>
+</ul>
 
 <hr />
 
