@@ -390,4 +390,8 @@ ul.horizontal > li + li:before {
   content: " ❧";
 }
 
+.widget-fallback {
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=my-style.css.map */
