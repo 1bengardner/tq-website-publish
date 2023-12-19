@@ -107,7 +107,7 @@ details[open] > :not(summary) {
 
 @media screen and (min-width: 600px) {
   .site-nav .page-link:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 14px;
   }
   #collapsible-search {
     display: inline;
@@ -192,6 +192,12 @@ li.opponent-stat-changes {
 
 .compendium-link:hover::after {
   content: "📖";
+  font-size: small;
+  margin-left: 0.125em;
+}
+
+.internal-link:hover::after {
+  content: "🔗";
   font-size: small;
   margin-left: 0.125em;
 }
