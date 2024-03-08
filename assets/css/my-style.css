@@ -80,6 +80,10 @@ path.monocolour {
   animation: slide-in 0.5s;
 }
 
+.pixel-art {
+  image-rendering: pixelated;
+}
+
 @keyframes expand {
   from {
     opacity: 0;
