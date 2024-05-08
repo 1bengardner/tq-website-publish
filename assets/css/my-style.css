@@ -84,6 +84,13 @@ path.monocolour {
   image-rendering: pixelated;
 }
 
+ul.horizontal > li {
+  display: inline-block;
+}
+ul.horizontal > li + li:before {
+  content: " ❧";
+}
+
 @keyframes expand {
   from {
     opacity: 0;
@@ -398,13 +405,6 @@ img + .callout {
 
 .xp {
   color: #31b4bf;
-}
-
-ul.horizontal > li {
-  display: inline-block;
-}
-ul.horizontal > li + li:before {
-  content: " ❧";
 }
 
 .widget-fallback {
